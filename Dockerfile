@@ -1,5 +1,5 @@
 # Use a base image with Java installed
-FROM ubuntu
+FROM openjdk:11
 
 # Set the working directory
 WORKDIR /app
