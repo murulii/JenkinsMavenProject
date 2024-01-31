@@ -1,11 +1,5 @@
 <settings>
-    <servers>
-        <server>
-            <id>central</id>
-            <username>your_username</username>
-            <password>your_password</password>
-        </server>
-    </servers>
+   
 
     <mirrors>
         <mirror>
