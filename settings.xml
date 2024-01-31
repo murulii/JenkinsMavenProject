@@ -1,13 +1,36 @@
-<settings>
-   <servers>
-        <server>
-            <id>central</id>
-            <username>admin</username>
-            <password>Depl0y@123</password>
-        </server>
-    </servers>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-    <mirrors>
+<profile> 
+ <id>nexus</id>
+ <repositories>
+    <repository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>http://212.2.246.26:8081/repository/muruli_proxy/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>http://212.2.246.26:8081/repository/muruli_proxy/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+</profile>
+<mirrors>
         <mirror>
             <id>central</id>
             <url>http://212.2.246.26:8081/repository/muruli_proxy/</url>
@@ -15,16 +38,10 @@
         </mirror>
     </mirrors>
 
-    <profiles>
-        <profile>
-            <id>development</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <dev.build.settings>true</dev.build.settings>
-            </properties>
-        </profile>
-    </profiles>
+
+   
 </settings>
+
+
+
 
