@@ -1,1 +1,30 @@
+<settings>
+    <servers>
+        <server>
+            <id>central</id>
+            <username>your_username</username>
+            <password>your_password</password>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <url>http://212.2.246.26:8081/repository/muruli_proxy/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>development</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <dev.build.settings>true</dev.build.settings>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
 
