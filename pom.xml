@@ -16,6 +16,14 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+	<mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://212.2.246.26:8081/repository/muruli_proxy</url>
+    </mirror>
+  </mirrors>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
