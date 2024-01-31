@@ -1,5 +1,11 @@
 <settings>
-   
+   <servers>
+        <server>
+            <id>central</id>
+            <username>admin</username>
+            <password>Depl0y@123</password>
+        </server>
+    </servers>
 
     <mirrors>
         <mirror>
