@@ -18,26 +18,6 @@
 	</properties>
 
 	
-<distributionManagement>
- 
-
-<repository>
-  <id>muruli_hosted</id>
-  <name>muruli_hosted</name>
-  <url>http://212.2.246.26:8081/repository/muruli_hosted/</url>
-</repository>
-
-	
-  <snapshotRepository>
-    <id>maven-snapshots</id>
-    <!-- CHANGE HERE by your team Nexus server -->
-    <url>http://13.126.124.159:8081/repository/maven-releases/</url>
-  </snapshotRepository>
-</distributionManagement>
-
-
-	
-	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -59,5 +39,36 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+
+
+
+
+
+
+<distributionManagement>
+    <repository>
+      <id>muruli_hosted</id>
+      <name>muruli_hosted</name>
+      <url>http://212.2.246.26:8081/repository/muruli_hosted/</url>
+    </repository>
+    <snapshotRepository>
+      <id>muruli_snapshot</id>
+      <name>muruli_snapshot</name>
+      <url>http://212.2.246.26:8081/repository/muruli_snapshot/</url>
+    </snapshotRepository>
+</distributionManagement>
+
+
+
+
+
+
+
+
+
+
+	
 
 </project>
