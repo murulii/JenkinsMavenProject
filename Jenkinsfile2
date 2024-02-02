@@ -20,7 +20,7 @@ pipeline {
                 configFileProvider([configFile(fileId: '6920b8e1-d3c8-4ce7-ad1f-e489d2cbae67', variable: 'myvar')]) {
     // some block
 
-                   sh 'mvn -s $myvar clean deploy -DskipTests=true'
+                   sh 'mvn -s $myvar clean install -DskipTests=true'
 
 }
               }
