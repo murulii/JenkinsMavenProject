@@ -23,21 +23,21 @@ pipeline {
         
         
         
-        stage('Nexus Build') {
-            steps {
-                    nexusArtifactUploader artifacts: [[artifactId: 'demo', 
-                    classifier: '', 
-                    file: '/home/jenkins/agent/workspace/Java_Project/demo-0.0.1.jar', 
-                    type: 'jar']], 
-                    credentialsId: 'nexus', 
-                    groupId: 'com.example', 
-                    nexusUrl: '212.2.246.26:8081/repository/muruli_hosted/', 
-                    nexusVersion: 'nexus2', 
-                    protocol: 'http', 
-                    repository: 'muruli_hosted', 
-                    version: '${BUILD_NUMBER}'
-            }
-        }   
+        //stage('Nexus Build') {
+          //  steps {
+               //     nexusArtifactUploader artifacts: [[artifactId: 'demo', 
+              //      classifier: '', 
+                //    file: '/home/jenkins/agent/workspace/Java_Project/demo-0.0.1.jar', 
+               //     type: 'jar']], 
+               //     credentialsId: 'nexus', 
+               //     groupId: 'com.example', 
+                //    nexusUrl: '212.2.246.26:8081/repository/muruli_hosted/', 
+                //    nexusVersion: 'nexus2', 
+               //     protocol: 'http', 
+               //     repository: 'muruli_hosted', 
+              //      version: '${BUILD_NUMBER}'
+          //  }
+      //  }   
    
    
     }
